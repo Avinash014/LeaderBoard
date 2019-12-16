@@ -1,0 +1,43 @@
+body{
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+#main{
+    width:80vw;
+    margin:auto;
+}
+.center{
+    text-align: center;
+    margin:auto;
+}
+.cgrey{
+    background-color: lightgrey;
+}
+.fleft{
+    float:left;
+}
+.fright{
+    float:right;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+table{
+    margin:auto;
+    background-color: skyblue;
+}
+table,th,td {
+    border : 1px solid black;
+    border-collapse: collapse;
+  }
+th,td {
+    padding: 5px;
+}
+.flag{
+    width:50px;
+    height:auto;
+}

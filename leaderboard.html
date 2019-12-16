@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="leaderboard.js" defer></script>
+<link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+    <div id="main" class=" cgrey">
+    
+    <div class="clearfix">
+        <!-- code for selecting number of row to show on one page -->
+        <span class="filter fleft">
+            <h2>show 
+                <select id ="numEntries" name="numEntries">
+                    <option value="5" >5</option>
+                    <option value="10" selected="selected">10</option>
+                    <option value="15" >15</option>
+                    <option value="20" >20</option>
+                    <option value="25" >25</option>
+                </select>entries
+            </h2> 
+        </span>
+
+        <!-- code for search input bar -->
+        <span class="filter fright">
+            <h2>search<input id ="searchKey"type="search" name="search"><button id="searchButton">submit</button></h2>
+        </span> 
+    </div>
+    <hr/>
+    <span class="filter fright"> 
+          <!-- <button onclick = sortBy(this);>Name</button>
+          <button onclick = sortBy(this);>Capital</button>
+          <button onclick = sortBy(this);>Population</button>
+          <button onclick = sortBy(this);>Region</button>     -->
+       <!-- <input>  -->
+       <h2>Sort By
+        <select id ="sort" name="numEntries">
+            <option value="Name" selected = "selected" >Name</option>
+            <option value="Capital" >Capital</option>
+            <option value="Population" >Population</option>
+            <option value="Region" >Region</option>
+        </select>
+        </h2> 
+    </span>
+    <div id="data" class="center">
+        <h1>Here goes the data</h1>
+    </div>
+    <hr/>
+    <p class="">showing <span id="start">start</span> to <span id="end">end</span> of <span id="total">`${totalEntries}`</span> entries</p>
+    <!-- <button id="previousButton"> previous</button> -->
+    <span id = "goToPage"></span>
+    <!-- <button id="nextButton">next</button> -->
+    
+    <!-- <img class="flag" src="https://restcountries.eu/data/afg.svg"></img> -->
+        
+</div>
+<script>
+    // document.getElementById("b").innerHTML=6;
+</script>
+<!-- <script src="leaderboard.js"></script> -->
+
+</body>
+</html>
